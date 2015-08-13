@@ -1,0 +1,58 @@
+
+<link rel="stylesheet" type="text/css" href="w1d3.html">
+
+.shape {
+  height: 3em;
+  width: 3em;
+  border: .2em solid black;
+  margin: 1em;
+}
+.block-children > * { display: block;}
+.inline-block-children > * { display: inline-block; }
+
+.shout {
+	text-transform: uppercase;
+}
+
+.shadow {
+	box-shadow: 0px 0px 20px 0px gray;
+	color: gray;
+}
+
+.invert {
+	transform: rotate(180deg);
+}
+
+
+.red-background {
+	background-color: red;
+}
+
+.blue-background {
+	background-color: blue;
+}
+
+.purple-background {
+	background-color: purple;
+}
+
+
+.circle {
+	background: solid;
+	border: solid;
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+}
+
+.half {
+	size: 50%;
+}
+
+.middle {
+	text-align: block;
+}
+
+.center {
+	text-align: inline
+}
