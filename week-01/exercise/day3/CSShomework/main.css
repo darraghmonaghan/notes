@@ -1,0 +1,37 @@
+.shape {
+  height: 3em;
+  width: 3em;
+  border: .2em solid black;
+  margin: 1em;
+}
+.block-children > * { display: block;}
+.inline-block-children > * { display: inline-block; }
+
+
+.shout {
+	text-transform: uppercase;
+}
+
+.invert {
+	transform: rotate(180deg);
+}
+
+.red-background {
+	color: red;
+	background-color: solid;
+}
+
+.blue-background {
+	color: blue;
+	background-color: solid;
+}
+
+.purple-background {
+	color: purple;
+	background-color: solid;
+}
+
+.circle {
+	border-radius: 100%;
+	background-color: solid;
+}
