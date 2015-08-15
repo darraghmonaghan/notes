@@ -5,7 +5,9 @@ console.log("Sanity Check: JS is working!");
 	var nextCell = $(this).closest('td').next();
 //	var Tds = document.getElementById("tdCount");
 //	var	raceDuration = Tds.length;
-	var currentClickA = 0;
+	var currentClickCar1 = 0;
+	var currentClickCar2 = 0;
+
 
 
 
@@ -15,15 +17,19 @@ $(document).ready(function() {
 	    if(e.keyCode == 65){
 	        console.log('A was pressed') ;
 			$('#car1').remove() ;
-			currentClickA++;
+			currentClickCar1++;
 			        // $(this).parent().next().html('<p>hello</p>') ;
 			       	// $(this).next().html('<p>hello</p>') ;
 			        // $(nextCell).html('<p>hello</p>');
 			        // $('td').html('<p>hello</p>');
+					//$('#test').html("<img id='car1' src=" + "'http://www.weprintfridgemagnets.co.uk/wp-content/uploads/2014/01/police-car.png'" + ">");
+					// $('#test').prepend('<img id="car1" src="http://www.weprintfridgemagnets.co.uk/wp-content/uploads/2014/01/police-car.png">');
+			$('tr.class1').append("<td class='tdCount'><img id='car1' src=" + car1 + "></td>"); 
 
 	    } else if (e.keyCode == 76) {
 	        console.log('L was pressed');
-	        $('#car2').remove() ;   
+	        $('#car2').remove() ;
+	        currentClickCar2++;   
 	    } 
 	});
 });
