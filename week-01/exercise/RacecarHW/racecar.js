@@ -3,22 +3,28 @@ console.log("Sanity Check: JS is working!");
 	var car1 = 'http://www.weprintfridgemagnets.co.uk/wp-content/uploads/2014/01/police-car.png';
 	var car2 = 'http://www.ban-boredom.com/mini-car.gif';
 	var nextCell = $(this).closest('td').next();
+//	var Tds = document.getElementById("tdCount");
+//	var	raceDuration = Tds.length;
+	var currentClickA = 0;
+
+
 
 $(document).ready(function() {
 
-// var a = jQuery.Event("keypress");
-
-// var e.which = 65;
-// var e.which = 65;
-
-
 	$(document).keydown(function(e) {
 	    if(e.keyCode == 65){
-	        console.log('A was pressed');
-	        $('#car1').remove() ;
-			// $('#car1').append(nextCell);
-			$(nextCell).attr("<img class='car' id='car1' src=" + 'http://www.weprintfridgemagnets.co.uk/wp-content/uploads/2014/01/police-car.png' + ">");
-	    }
+	        console.log('A was pressed') ;
+			$('#car1').remove() ;
+			currentClickA++;
+			        // $(this).parent().next().html('<p>hello</p>') ;
+			       	// $(this).next().html('<p>hello</p>') ;
+			        // $(nextCell).html('<p>hello</p>');
+			        // $('td').html('<p>hello</p>');
+
+	    } else if (e.keyCode == 76) {
+	        console.log('L was pressed');
+	        $('#car2').remove() ;   
+	    } 
 	});
 });
 
