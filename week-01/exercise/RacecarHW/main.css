@@ -3,14 +3,15 @@
 BODY
 **/
 
-* {
+/** {
 	border-style: dashed;
 	border-color: black;
-}
+}*/
 
 body {
 	/* background-image: url('http://www.thecoffeeexperiment.com/demo/wp-content/uploads/2011/04/IMG_3534.jpg');*/
-	background-size: cover;
+	/* background-size: cover; 
+	*/
 	margin-top: 0px;
 	margin-right: 0px;
 	margin-bottom: 0px;
@@ -110,6 +111,10 @@ td {
 }
 
 .winStatement {
+	display: none;
+}
+
+#robbersWin {
 	position: absolute;
     top: 50%;
     left: 50%;
@@ -119,13 +124,19 @@ td {
     height: 100px;
     font-family: 'bangers', 'cursive';
     font-size: 15px;
-}
-
-#robbersWin {
 	background-color: yellow;
 }
 
 #copsWin {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -150px;
+    width: 300px;
+    height: 100px;
+    font-family: 'bangers', 'cursive';
+    font-size: 15px;
 	background-color: blue;
 }
 
