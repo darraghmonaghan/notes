@@ -31,6 +31,7 @@ $(document).ready(function() {
 		} else if (currentClickCar2 >= clicksToWin) {
 	  		car2Score ++;
 			$('td#car2Score').text(car2Score);
+			
 			// function for showing winner
 			gameReset();
 		}
