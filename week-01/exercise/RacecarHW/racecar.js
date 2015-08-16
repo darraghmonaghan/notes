@@ -25,13 +25,13 @@ $(document).ready(function() {
 					//$('#test').html("<img id='car1' src=" + "'http://www.weprintfridgemagnets.co.uk/wp-content/uploads/2014/01/police-car.png'" + ">");
 					// $('#test').prepend('<img id="car1" src="http://www.weprintfridgemagnets.co.uk/wp-content/uploads/2014/01/police-car.png">');
 					//$("tr.1").append("<td>New Column</td>");
-			$('tr.1').append("<td class='tdCount'><img id='car1' src=" + car1 + "></td>");       // this works.......
+			$('tr.1').append("<td class='newTD'><img id='car1' src=" + car1 + "></td>");       // this works.......
 
 	    } else if (e.keyCode == 76) {
 	        console.log('L was pressed');
 	        $('#car2').remove() ;
 	        currentClickCar2++;
-	        $('tr.2').append("<td class='tdCount'><img id='car2' src=" + car2 + "></td>");       // this works.......   
+	        $('tr.2').append("<td class='newTD'><img id='car2' src=" + car2 + "></td>");       // this works.......   
 	    } 
 	});
 });
