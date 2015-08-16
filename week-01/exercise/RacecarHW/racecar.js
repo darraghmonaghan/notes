@@ -7,11 +7,23 @@ console.log("Sanity Check: JS is working!");
 //	var	raceDuration = Tds.length;
 	var currentClickCar1 = 0;
 	var currentClickCar2 = 0;
+	var car1Score = 0;
+	var car2Score = 0;
+	var clicksToWin = 10;
 
 
 
 
 $(document).ready(function() {
+
+function gameReset () {
+	// $('#car1').remove() ;
+	// $('#car2').remove() ;
+	// $('tr.1').append("<td class='newTD'><img id='car1' src=" + car1 + "></td>");
+	$('newTD').remove();
+	$('tr.1').append("<td class='newTD'><img id='car1' src=" + car1 + "></td>");
+	$('tr.2').append("<td class='newTD'><img id='car2' src=" + car2 + "></td>");
+}
 
 	$(document).keydown(function(e) {
 	    if(e.keyCode == 65){
@@ -32,9 +44,27 @@ $(document).ready(function() {
 	        $('#car2').remove() ;
 	        currentClickCar2++;
 	        $('tr.2').append("<td class='newTD'><img id='car2' src=" + car2 + "></td>");       // this works.......   
-	    } 
+	    }
+
+	    if (currentClickCar1 >= clicksToWin) {
+	    	car1Score ++;
+	    	$('td#car1Score').text(car1Score);
+	    	// function for showing winner
+	    	gameReset();
+
+	    } else if (currentClickCar2 >= clicksToWin) {
+	    	car2Score ++;
+	    	$('td#car2Score').text(car2Score)
+	    	gameReset();
+	    }
+
 	});
 });
+
+
+
+
+
 
 
 
