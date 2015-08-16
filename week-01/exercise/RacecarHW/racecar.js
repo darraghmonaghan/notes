@@ -20,9 +20,11 @@ function gameReset () {
 	// $('#car1').remove() ;
 	// $('#car2').remove() ;
 	// $('tr.1').append("<td class='newTD'><img id='car1' src=" + car1 + "></td>");
-	$('newTD').remove();
+	$('td.newTD').remove();
 	$('tr.1').append("<td class='newTD'><img id='car1' src=" + car1 + "></td>");
 	$('tr.2').append("<td class='newTD'><img id='car2' src=" + car2 + "></td>");
+	car1Score = 0;
+	car2Score = 0;
 }
 
 	$(document).keydown(function(e) {
