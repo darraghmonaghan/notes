@@ -1,8 +1,8 @@
 
 console.log("Sanity Check: JS is working!");
 
-	var car1 = 'http://www.weprintfridgemagnets.co.uk/wp-content/uploads/2014/01/police-car.png';
-	var car2 = 'http://www.ban-boredom.com/mini-car.gif';
+	var car1 = 'http://freepngimages.com/wp-content/uploads/2014/10/police-car1.png';
+	var car2 = 'http://www.mini.co.id/mini2010_qa/_common/_shared_files/teaser_pool/new_main_stage/cooper_s.png';
 	var nextCell = $(this).closest('td').next();
 	var currentClickCar1 = 0;
 	var currentClickCar2 = 0;

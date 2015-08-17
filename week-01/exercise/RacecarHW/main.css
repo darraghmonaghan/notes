@@ -9,9 +9,8 @@ BODY
 }*/
 
 body {
-	/* background-image: url('http://www.thecoffeeexperiment.com/demo/wp-content/uploads/2011/04/IMG_3534.jpg');*/
-	/* background-size: cover; 
-	*/
+	background-image: url('https://metrouk2.files.wordpress.com/2010/11/article-1288602491428-0bda25a9000005dc-643873_466x310.jpg');
+	background-size: cover; 
 	margin-top: 0px;
 	margin-right: 0px;
 	margin-bottom: 0px;
@@ -40,7 +39,7 @@ h2 {
 }
 
 .title {
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: rgba(255, 255, 255, 0.7);
 	font-family: 'bangers', 'cursive';
 	text-align: center;
 	width: 100%;
@@ -83,7 +82,7 @@ td {
 	width: 90px;
 	min-width: 75px;
 	border-style: solid, white;
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: rgba(255, 255, 255, 0.7);
 }
 
 .newTD {
@@ -112,6 +111,9 @@ td {
 
 .winStatement {
 	display: none;
+	font-color: white;
+	text-align: vertical;
+	font-size: 30px;
 }
 
 #robbersWin {
@@ -123,8 +125,8 @@ td {
     width: 300px;
     height: 100px;
     font-family: 'bangers', 'cursive';
-    font-size: 15px;
-	background-color: yellow;
+	background-color: rgba(220, 65, 65, 1);
+	font-color: white;
 }
 
 #copsWin {
@@ -136,9 +138,10 @@ td {
     width: 300px;
     height: 100px;
     font-family: 'bangers', 'cursive';
-    font-size: 15px;
-	background-color: blue;
+	background-color: rgba(29, 104, 215, 1);
+	font-color: white;
 }
+
 
 
 /*******************************
