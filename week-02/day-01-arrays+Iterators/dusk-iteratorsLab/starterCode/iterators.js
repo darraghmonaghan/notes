@@ -9,6 +9,10 @@ var o_o = {
     //code here...
   },
   filter: function(list, callback) {
+<<<<<<< HEAD
+=======
+    //code here...
+>>>>>>> 378a232692cc09b7562c65b71751abb72ace4793
   }
 };
 
