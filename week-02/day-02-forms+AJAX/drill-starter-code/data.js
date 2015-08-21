@@ -193,3 +193,51 @@ var data = {
     }
   ]
 }
+
+
+//console.log(data.school);
+//console.log(data.students[0]);
+//console.log(data.students.length);
+// data.students.forEach(function callback(element) {
+// 	console.log(element.github_username);
+// });
+
+// data.students.forEach(function callback(element) {
+//       $('body').append('<br>' + element.first_name + " " + element.last_name +  ": " + "<a href='https://github.com/'" + element.github_username + ">" + element.github_username + '</a>');
+// });
+
+
+
+
+  function buildGithublink() {
+    console.log("testing 1");
+    var gitUser = students.github_username;
+    var firstname = students.first_name;
+    var lastname = students.last_name;
+    var fullname = firstname + " " + lastname;
+    var gitLink = "<a href='https://github.com/" + gitUser + "'>" + fullname + "</a>";
+    return gitLink;
+  }
+
+  function renderGithubLinks(students) {
+    students.forEach(function callback(element) {
+      var anchor = (buildGithublink(students));
+      $('body').append(anchor);
+    });
+  }
+
+
+
+$(document).ready(function() {
+
+  console.log("Sanity Check: JS is working!");
+
+  renderGithubLinks();
+
+});
+
+
+
+
+
+
